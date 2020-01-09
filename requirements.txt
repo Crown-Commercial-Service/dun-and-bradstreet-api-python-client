@@ -1,0 +1,6 @@
+# Run `make freeze-requirements` to update requirements.txt
+# with package version changes made in requirements-app.txt
+
+git+https://github.com/madzak/python-json-logger.git@v0.1.8#egg=python-json-logger==v0.1.8
+
+requests==2.22.0
