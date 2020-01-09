@@ -8,14 +8,14 @@ from setuptools import setup, find_packages
 
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
-with open('dnbclient/__init__.py', 'rb') as f:
+with open('direct_plus_python_client/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
 
 setup(
-    name='dun-and-bradstreet-api-python-client',
+    name='direct-plus-python-client',
     version=version,
-    url='https://github.com/alphagov/dun-and-bradstreet-api-python-client',
+    url='https://github.com/alphagov/direct-plus-python-client',
     license='MIT',
     author='GDS Developers',
     description='A python client for D&B Direct+ API.',
