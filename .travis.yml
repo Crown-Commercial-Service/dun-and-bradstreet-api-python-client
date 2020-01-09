@@ -6,7 +6,7 @@ python:
 install:
   - make requirements-dev
 script:
-  - make test PYTEST_ARGS="--cov=dmutils --cov-report=term-missing"
+  - make test PYTEST_ARGS="--cov=direct_plus_python_client --cov-report=term-missing"
 after_success:
   - coveralls
 notifications:
